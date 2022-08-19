@@ -1,0 +1,75 @@
+
+[
+  {
+    "category":"дом",
+    "name": "дом1",
+    "image": "img/product-1.jpg",
+    "color": "Светло-каканый",
+    "description": "Длинное красивое описание дом1",
+    "price": 1500.0,
+    "quantity": 10
+  },
+   {
+     "category":"дом",
+     "name": "дом2",
+     "image": "img/product-2.jpg",
+     "color": "Светло-каканый",
+     "description": "Длинное красивое описание дом2",
+     "price": 1700.0,
+     "quantity": 10
+   },
+     {
+     "category":"офис",
+     "name": "office1",
+     "image": "img/product-3.jpg",
+     "color": "Светло-каканый",
+     "description": "Long and beautiful description for office1",
+     "price": 800.0,
+     "quantity": 10
+   },
+  {
+     "category":"офис",
+     "name": "офис2",
+     "image": "img/product-4.jpg",
+     "color": "Светло-каканый",
+     "description": "Длинное красивое описание офис2",
+     "price": 1300.0,
+     "quantity": 10
+   },
+  {
+     "category":"модерн",
+     "name": "модерн1",
+     "image": "img/product-11.jpg",
+     "color": "Светло-каканый",
+     "description": "Длинное красивое описание модерн1",
+     "price": 1200.0,
+     "quantity": 10
+   },
+  {
+     "category":"модерн",
+     "name": "модерн2",
+     "image": "img/product-21.jpg",
+     "color": "Темно-каканый",
+     "description": "Длинное красивое описание модерн2",
+     "price": 2100.0,
+     "quantity": 10
+   },
+  {
+     "category":"классика",
+     "name": "классика1",
+     "image": "img/product-31.jpg",
+     "color": "Ярко-каканый",
+     "description": "Длинное красивое описание классика1",
+     "price": 450.0,
+     "quantity": 10
+   },
+  {
+     "category":"классика",
+     "name": "классика2",
+     "image": "img/product-41.jpg",
+     "description": "Длинное красивое описание классика2",
+     "price": 500.0,
+      "color": "каканый",
+     "quantity": 10
+   }
+  ]
