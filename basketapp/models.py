@@ -34,3 +34,8 @@ class Basket(models.Model):
 
     def __str__(self):
         return f"{self.product.name} - {self.quantity} шт"
+
+
+    @staticmethod
+    def get_item(pk):
+        return Basket.objects.filter(pk=pk).first()

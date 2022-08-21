@@ -20,14 +20,15 @@ def index(reqest):
     )
 
 
-def get_hot_product(queryset):
-    return random.choice(queryset)
+def get_hot_product():
+    products = Product.objects.all()
+    return random.sample(list(products), 1)[0]
 
 
 def products(reqest):
     categories = ProductCategory.objects.all()
     products = Product.objects.all()
-    hot_product = get_hot_product(products)
+    hot_product = get_hot_product()
     return render(
         reqest,
         "mainapp/products.html",
@@ -61,7 +62,7 @@ def category(reqest, category_id, page=1):
             "page": products_page,
             "categories": categories,
             "category": category,
-            "hot_product": get_hot_product(products),
+            "hot_product": get_hot_product(),
         },
     )
 
