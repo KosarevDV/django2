@@ -20,6 +20,11 @@
                         <i class="fa fa-user">   {{ user.first_name|default:'Пользователь' }}</i>
                     </a>
                 </li>
+                 <li class="dropdown-item">
+                    <a href="{% url 'orders:orders_list' %}">
+                        <i class="fa fa-user"> Заказы </i>
+                    </a>
+                </li>
                 {% endif %}
                 {% if user.is_superuser %}
                 <li class="dropdown-item">
