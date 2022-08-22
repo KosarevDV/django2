@@ -1,10 +1,22 @@
 [
-    {
-        "name": "Стулья",
-        "description": "Отличные стулья"
-    },
-    {
-        "name": "Столы",
-        "description": "Отличные столы"
-    }
+  {
+
+      "name": "Офис",
+      "description": "f"
+  },
+  {
+
+      "name": "Классика",
+      "description": ""
+  },
+  {
+
+      "name": "Модерн",
+      "description": ""
+  },
+  {
+
+      "name": "Дом",
+      "description": ""
+  }
 ]

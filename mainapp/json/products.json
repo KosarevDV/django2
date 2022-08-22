@@ -1,6 +1,48 @@
 [
-    {
-        "name":"Стул",
-        "category": "Стулья"
-    }
+  {
+      "category_id": 1,
+      "name": "Лампа сфера",
+      "image": "products_images/product-1.jpg",
+      "color": "Каканый",
+      "description": "Супер сфера",
+      "price": "3500.00",
+      "quantity": 10
+  },
+  {
+
+      "category_id": 1,
+      "name": "Стул фамильный",
+      "image": "products_images/product-4.jpg",
+      "color": "Ярко каканый",
+      "description": "",
+      "price": "4590.00",
+      "quantity": 2
+  },
+  {
+      "category_id": 3,
+      "name": "Классический диван",
+      "image": "products_images/product-3-sm.jpg",
+      "color": "сетло-каканый",
+      "description": "Уникальный дизайн",
+      "price": "45000.00",
+      "quantity": 5
+  },
+  {
+      "category_id": 4,
+      "name": "Стулья",
+      "image": "products_images/product-2.jpg",
+      "color": "Темно-каканый",
+      "description": "Удобный стул для всех",
+      "price": "14500.00",
+      "quantity": 10
+  },
+  {
+      "category_id": 3,
+      "name": "Чайник",
+      "image": "products_images/product-3.jpg",
+      "color": "Какано-синий",
+      "description": "Какано-синий самый сильный",
+      "price": "1500.00",
+      "quantity": 10
+  }
 ]
