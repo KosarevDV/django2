@@ -14,7 +14,16 @@ class BasketManager(models.Manager):
         return sum(item.cost for item in basket_items)
 
 
+class BasketQuerySet(models.QuerySet):
+    def delete(self, *args, **kwargs):
+        for object in self:
+            object.product.quantity += object.quantity
+            object.product.save()
+        super(BasketQuerySet, self).delete(*args, **kwargs)
+
+
 class Basket(models.Model):
+    objects = BasketQuerySet.as_manager()
     class Meta:
         ordering = ("id",)
         unique_together = ("user", "product")
@@ -39,3 +48,11 @@ class Basket(models.Model):
     @staticmethod
     def get_item(pk):
         return Basket.objects.filter(pk=pk).first()
+
+    def save(self, *args, **kwargs):
+        if self.pk:
+            self.product.quantity -= self.quantity - self.__class__.get_item(self.pk).quantity
+        else:
+            self.product.quantity -= self.quantity
+            self.product.save()
+            super(self.__class__, self).save(*args, **kwargs)
